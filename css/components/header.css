@@ -1,0 +1,92 @@
+.header{
+    display:flex;
+    align-content: center;
+    justify-content: flex-end; 
+    padding-top:2rem;
+    padding-bottom:2rem;
+    
+}
+
+.header .menu{
+    display:none;
+}
+
+.header_bars{
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    color: var(--clr-light);
+    display:block;
+    z-index:12;
+}
+
+@media (min-width:768px){
+    
+    
+    .header .menu{
+    display: flex;
+    align-content: center; 
+    list-style: none;
+    padding:0; 
+    gap:2em;
+}
+    
+    .menu_left{
+        padding-top:5px;
+    }
+
+.header_link{
+    font-size: var(--size-xs); 
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-light); 
+    letter-spacing:-0.05em;
+    transition: color 0.3s;
+}
+
+.header_link:hover{
+color:var(--clr-btn);
+}
+
+.header_line{
+    border: 1px solid var(--clr-light);
+    padding-top:1.5rem;
+}
+
+
+    
+    .button_resume{
+        font-size:var(--size-xs);
+    }
+    
+    .header_bars{ display:none;}  /*now this bar wont be visible when we are in our media query size > 768px; */
+    
+}
+
+/*now in this media query which is for larger screens we will only change the font sizes and button sizes nothing else is needed to be changes*/
+
+/*vv imp a media query that triggers after 768px will inherit all the css of <768px so that why we did header_bars display:none otherwise those bars wouldve been visible as well*/
+
+@media (min-width:1024px){
+    
+
+
+.header_link{
+    font-size: var(--size-sm); 
+ 
+}
+
+
+
+
+
+    
+    .button_resume{
+       font-size: var(--size-sm); 
+    }
+    
+    .header_bars{ display:none;}  /*now this bar wont be visible when we are in our media query size > 768px; */
+
+}
+
+
+

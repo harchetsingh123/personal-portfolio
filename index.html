@@ -1,0 +1,230 @@
+<!--dont use percentages for containers you will see ahead in media queries-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>My profolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/about.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+    <link rel="stylesheet" href="css/components/contact.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/mobile-menu.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2777dd37e5.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+<script src="parallax.js"></script>
+</head>
+
+
+<body> 
+  
+  <header class="header container">
+      <nav>
+         <ul class="menu">
+             <li class="menu_left">
+                 <a class="header_link" href="#contact">Contact Me</a>
+             </li>
+             <li class="menu_left">
+                 <a class="header_link" href="#work">Work</a>
+             </li>
+             <li class="menu_left">
+                 <a class="header_link"  href="#about">About</a>
+             </li>
+             <li class="header_line">
+                 
+             </li>
+            
+             <li>
+                 <button class="btn button_resume">Resume</button>
+             </li>
+             
+         </ul>
+         <button class="header_bars">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+</svg>
+
+         </button>
+      </nav>
+  </header>
+  
+<!--  mobile navbar start from here-->
+
+<div class="mobile-navbar">
+    <nav>
+       <ul class="mobile-navbar-ul">
+        <li ><a  class="mobile-navbar-links" href="#contact">Contact Me</a></li>
+        <li ><a class="mobile-navbar-links" href="#work">Work</a></li>
+        <li ><a class="mobile-navbar-links" href="#about">About</a></li>
+        
+        <li class="mobile-navbar-line"></li>
+        <li><button class="btn mobile-navbar-button">Resume</button></li>
+        </ul>
+    </nav>
+</div>
+
+<!--  mobile navbar ends here-->
+   
+   <main>
+     
+      <div class="para" data-parallax="scroll" data-image-src="images/para.jpg" >  
+
+   
+       <section id="about" class="hero container">
+          <img loading="lazy" class="hero_image" src="images/dp.jpg" alt="">
+          <h2 class="hero_h2">Hi <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="head_wave">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+</svg>
+,it's me Harchet!</h2>
+          <h1 class="hero_h1">Front-end<br>web developer</h1>
+          
+           <p class="hero_p">I am a <strong>front-end web development</strong> enthusiast and i love problem solving.</p>
+           <button class="hero_button btn">Reach me</button>
+       </section>
+       
+       </div>
+       
+       <section class="about container section">
+       
+           <div class="about_info">
+              <h1 class="about_h1">About</h1>
+              <p class="about_p">Oh hi there, I'm Harchet singh from NIT Jalandhar and i have a passion for <strong>front-end web development</strong> and i like to solve problems related to data structures as well.</p>
+              <p class="about_p">I just wish to built front-ends that make the web look alive :p.</p>
+               <h3 class="about_h3">Technologies:</h3>
+                 <div class="about_ul_flex">
+                      <ul class="about_ul">
+                   <li class="about_li">HTML</li>
+                   <li class="about_li">CSS</li>
+                   <li class="about_li">Javascipt</li>
+               </ul>
+                  <ul class="about_ul">
+                   <li class="about_li">Competitive Programming</li>
+                   <li class="about_li">Data structures and Algorithms</li>
+               </ul>
+                 </div>
+           </div>  
+           <div class="about_img_div">
+               <img loading="lazy" class="about_img" src="images/dp2.jpg" alt="my dp">
+           </div>  
+           
+       </section>
+       
+       
+       <section id="work" class="projects container section">
+          
+          <h2 class="projects_h2">Projects</h2>
+          <p class="projects_p">
+              These are some of the projects or front-end websites that i have create.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellendus totam esse voluptatibus soluta.
+          </p>
+          
+          
+          <div class="project_container">
+                        <h3 class="project_discription_h3">Gym Registration page</h3>
+          <div class="project_img-wrapper">
+              <img loading="lazy" class= "project_discription_img project_image1" src="images/project1.jpg" alt="gym website">
+          </div>
+          
+          <div class="project_discription_content project_content1">
+               <h2 class="project_discription_content_h2">Gym Resgistration page</h2>
+                <p class="project_discription_p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rerum ipsum fugiat necessitatibus.</p>
+          <p class="project_discription_p2" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore optio nihil modi fuga commodi asperiores autem quidem, reprehenderit excepturi sequi cum dicta, vel repudiandae?</p>
+           <button class="btn project-btn">Website</button>
+          </div>
+          </div>
+           
+                     <div class="nothidden project_container">
+                         <h3 class="project_discription_h3">Food ordering website</h3>
+           <div class="project_img-wrapper">
+              <img loading="lazy" class= "project_discription_img project_image2" src="images/project2.jpg" alt="gym website">
+          </div>
+          <div class="project_discription_content project_content2">
+                              <h2 class="project_discription_content_h2">Food ordering website</h2>
+                <p class="project_discription_p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rerum ipsum fugiat necessitatibus.</p>
+          <p class="project_discription_p2" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore optio nihil modi fuga commodi asperiores autem quidem, reprehenderit excepturi sequi cum dicta, vel repudiandae?</p>
+           <button class="btn project-btn">Website</button>
+          </div>
+          </div>
+           
+           <div class="hidden project_container">
+              <div class="project_discription_content project_content2">
+                              <h2 class="project_discription_content_h2">Food ordering website</h2>
+                <p class="project_discription_p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rerum ipsum fugiat necessitatibus.</p>
+          <p class="project_discription_p2" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore optio nihil modi fuga commodi asperiores autem quidem, reprehenderit excepturi sequi cum dicta, vel repudiandae?</p>
+           <button class="btn project-btn">Website</button>
+          </div>
+                                       <h3 class="project_discription_h3">Food ordering website</h3>
+           <div class="project_img-wrapper">
+              <img loading="lazy" class= "project_discription_img project_image2" src="images/project2.jpg" alt="gym website">
+          </div>
+               
+           </div>
+
+           
+           
+                               <div class="project_container">
+          <h3 class="project_discription_h3">Website for programmer interaction</h3>
+        <div class="project_img-wrapper">
+              <img loading="lazy" class= "project_discription_img project_image3" src="images/project3.jpg" alt="gym website">
+          </div>
+         <div class="project_discription_content project_content3">
+                              <h2 class="project_discription_content_h2">Website for programmer interaction</h2>
+                <p class="project_discription_p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rerum ipsum fugiat necessitatibus.</p>
+          <p class="project_discription_p2" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore optio nihil modi fuga commodi asperiores autem quidem, reprehenderit excepturi sequi cum dicta, vel repudiandae?</p>
+           <button class="btn project-btn">Website</button>
+          </div>
+          </div> 
+           
+                   
+          
+          
+       </section>
+       
+       
+       <section id="contact" class="contact container section">
+           <h2 class="contact_h2">Contact me!</h2>
+           <p class="contact_p">Following button will lead you to my email from where you can contact me</p>
+           <button class="contact_btn btn">Contact</button>
+       </section>
+       
+       
+       
+      
+   </main>
+    
+    <footer class="footer section boxi container">
+        
+        <h3 class="footer_h3">~ ~ ~ Harchet Singh ~ ~ ~</h3>
+        <div class="links">
+           
+            <ul class="links_ul">
+                <li><a href="https://www.linkedin.com/in/harchet-singh-93a428256/"><i class="fa-brands fa-linkedin"></i> LinkdIn/Harchet Singh</a></li>
+                <li><a href="https://www.instagram.com/kalyanpuria_harchet/"><i class="fa-brands fa-instagram"></i> instagram/kalyanpuria_harchet/</a></li>
+                <li><a href="https://leetcode.com/harchetsingh12/"><i class="fa-solid fa-code"></i> Leetcode/harchetsingh12/</a></li>
+            </ul>
+            <ul class="links_ul">
+                <li><a href="https://www.codechef.com/users/harsh12_s"><i class="fa-solid fa-code"></i> Codechef/harsh12_s</a></li>
+                <li><a href="https://codeforces.com/profile/harchetsingh12"><i class="fa-solid fa-code"></i> Codeforces/harchetsingh12</a></li>
+                <li><a href="https://auth.geeksforgeeks.org/user/harchetsnnc7/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"><i class="fa-solid fa-code"></i> Geeksforgeeks/harchetsnnc7</a></li>
+            </ul>
+        </div>
+        
+        <p class="footer_p">@my personal portfolio</p>
+        
+    </footer>
+    
+    
+    <script src="scipt/scipt.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.hero{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top:2rem;
+    gap:1rem;
+    width:100%;
+    padding:1rem 0;
+    
+    background-image: url("../../images/para.jpg");
+
+  /* Set a specific height */
+  min-height:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_image{
+    border-radius:50%;
+    width:8rem;
+    height:8rem;
+}
+
+.head_wave{
+    width:3.5%;
+    display: inline-block;
+    
+}
+
+.hero_h2{
+    color:var(--clr-shady);
+   font-size:var(--size-base); 
+}
+
+.hero_h1{
+  font-size:var(--size-4xl);  
+    margin-bottom:0.3rem;
+}
+
+.hero_p{
+    font-size:var(--size-sm);
+    color: var(--clr-shady);
+}
+
+.hero_p strong{
+    color:var(--clr-strong);
+}
+
+.hero_button{
+    font-size: var(--size-sm);
+}
+
+@media (min-width:475px){
+    
+    .hero{
+        gap:1.5rem;}
+
+
+.hero_image{
+    
+    width:8.5rem;
+    height:8.5rem;
+}
+
+.head_wave{
+    width:3.5%;
+    display: inline-block;
+    
+}
+
+.hero_h2{
+    color:var(--clr-shady);
+   font-size:var(--size-lg); 
+}
+
+.hero_h1{
+  font-size:var(--size-5xl);  
+    
+}
+
+.hero_p{
+    font-size:var(--size-xl);
+
+}
+
+.hero_p strong{
+    color:var(--clr-strong);
+}
+    
+    .hero_button{
+    font-size: var(--size-base);
+}
+    
+
+    
+    
+}

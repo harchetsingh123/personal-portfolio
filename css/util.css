@@ -1,0 +1,68 @@
+.btn{
+    display:inline-block;
+    font-weight: 600;
+    font-family: inherit;
+     background-color:var(--clr-btn); 
+    padding:0.5em 1em;
+    border-radius: 7px;
+    box-shadow: 3px 3px rgba(183,4,4,0.3);
+    
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 6px 6px rgba(183,4,4,0.1);
+}
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0.5rem; 
+    padding-right:0.5rem;
+    
+}
+
+.section{
+   margin-top:5rem;      /*its so that there must be margins between my sections*/
+}
+
+@media (min-width:475px){
+    .container{
+        max-width:475px;   /*from 475 to 640 the width will remain 475px*/
+    }
+}
+
+@media (min-width:640px){
+    .container{
+        max-width: 640px;
+    }
+    
+}
+
+@media (min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .container{
+        max-width: 1024px;
+    }
+    
+}
+
+@media (min-width:1280px){
+    .container{
+        max-width: 1280px;
+    }
+    
+}
+
+@media (min-width:1536px){
+    .container{
+        max-width: 1536px;
+    }
+    
+}
